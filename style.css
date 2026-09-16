@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: #f4f6fb;
+    color: #172033;
+    padding: 30px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(31, 41, 55, 0.08);
+    overflow: hidden;
+}
+
+.header {
+    height: 75px;
+    padding: 0 40px;
+    border-bottom: 1px solid #edf0f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #eef2ff;
+    color: #4f46e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #f0fdf4;
+    color: #15803d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 30px 40px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    color: #111827;
+}
+
+.hero h1 span {
+    background: linear-gradient(
+        90deg,
+        #4f46e5,
+        #7c3aed
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.ask-section {
+    padding: 0 50px;
+}
+
+#form {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.input-wrapper {
+    flex: 1;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 18px;
+    background: #f9fafb;
+    border: 1px solid #dfe3eb;
+    border-radius: 13px;
+    transition: 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    background: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.08);
+}
+
+.input-icon {
+    color: #6366f1;
+    font-size: 18px;
+}
+
+#inputbox {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #111827;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+#inputbox::placeholder {
+    color: #9ca3af;
+}
+
+#btn {
+    height: 58px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 13px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+#btn:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.22);
+}
+
+#btn:active {
+    transform: translateY(0);
+}
+
+.suggestions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.suggestions > span {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-right: 3px;
+}
+
+.suggestions button {
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #6b7280;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.suggestions button:hover {
+    border-color: #c7d2fe;
+    color: #4f46e5;
+    background: #f5f7ff;
+}
+
+.response-section {
+    margin: 40px 50px 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 17px;
+    overflow: hidden;
+    background: #fafbff;
+}
+
+.response-header {
+    min-height: 72px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ebf2;
+    background: #ffffff;
+}
+
+.response-header h2 {
+    font-size: 16px;
+    color: #1f2937;
+    margin-bottom: 3px;
+}
+
+.response-header p {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.response-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: #eef2ff;
+    color: #6366f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#output {
+    min-height: 240px;
+    padding: 25px;
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+#output:empty::before {
+    content: "Your AI-generated response will appear here...";
+    color: #b0b5c0;
+}
+
+#output::-webkit-scrollbar {
+    width: 6px;
+}
+
+#output::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+#btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        border-radius: 18px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 45px 20px 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .ask-section {
+        padding: 0 20px;
+    }
+
+    #form {
+        flex-direction: column;
+    }
+
+    #btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .suggestions {
+        justify-content: center;
+    }
+
+    .response-section {
+        margin: 30px 20px 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    .status {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .suggestions > span {
+        width: 100%;
+        text-align: center;
+    }
+
+    #output {
+        min-height: 220px;
+        padding: 18px;
+    }
+}
